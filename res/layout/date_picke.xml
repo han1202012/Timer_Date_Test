@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 
+    	android:startYear 属性 : 设置可选择日期的开始年份
+    	android:endYear 属性 : 设置可选择日期的结束年份
+    	android:calendarViewShown 属性 : 设置是否显示CalendarView组件
+    	android:spinnersShown 属性 : 设置是否显示
+     -->
+    <DatePicker 
+        android:id="@+id/date_picker"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:startYear="2000"
+        android:endYear="2020"
+        android:calendarViewShown="true"
+        android:spinnersShown="true"/>
+
+</LinearLayout>

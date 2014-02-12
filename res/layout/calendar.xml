@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="日历视图"/>
+    
+    <!-- 
+    	android:firstDayOfWeek 属性, 设置星期几是一周的开始
+    	android:shownWeekCount 属性, 设置显示几个星期的日历
+    	android:selectedWeekBackgroundColor 属性, 设置当前选中日期所在的星期背景颜色
+    	android:focusedMonthDateColor 属性, 显示当前选中月份的日期颜色, 在这个日历中可能同时显示2个月份的日历
+    	android:weekSeparatorLineColor 属性, 设置将日期分开的线条颜色
+    	android:unfocusedMonthDateColor 属性, 设置没有选中的月份日期颜色
+     -->
+    <CalendarView	
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:firstDayOfWeek="7"
+		android:shownWeekCount="4"
+		android:selectedWeekBackgroundColor="#aff"
+		android:focusedMonthDateColor="#f00"
+		android:weekSeparatorLineColor="#ff0"
+		android:unfocusedMonthDateColor="#f9f"
+		android:id="@+id/calendarView" />
+    
+
+</LinearLayout>

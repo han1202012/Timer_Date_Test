@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Chronometer 
+        android:id="@+id/chronometer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20pt"
+        android:textColor="#DF0101"/>
+    
+    <!-- checked为true的时候, 显示开始计时, 此时没有计时 -->
+    <ToggleButton 
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15pt"
+        android:textOn="开始计时"
+        android:textOff="停止计时"
+        android:checked="true"/>
+
+</LinearLayout>
